@@ -1,8 +1,8 @@
+import "./App.css"
 import { Route, Routes } from "react-router-dom";
 import LoginPage from "./components/Pages/login/LoginPage";
 import OrderPage from "./components/Pages/Order/OrderPage";
 import ErrorPage from "./components/Pages/error/ErrorPage";
-
 
 
 function App() {
@@ -16,3 +16,4 @@ function App() {
 }
 
 export default App;
+
