@@ -32,7 +32,7 @@ export default function Profile({username}) {
 //styledComponents
 const ProfileStyled = styled.div`
     display: flex;
-        align-items: center;
+    align-items: center;
     justify-content: space-between;
     min-width: 100px;
 
