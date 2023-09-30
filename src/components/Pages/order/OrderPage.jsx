@@ -25,16 +25,15 @@ export default function OrderPage() {
 //styled components
 const OrderPageStyled = styled.div`
   background: ${theme.colors.primary};
-  width: 100vh;
   height: 100vh;
+  width: 1500px;
   display: flex;
   justify-content: center;
   align-items: center;
 
   .container {
-    background: red;
     height: 95vh;
-    width: 95vh;
+    width: 1400px;
     display: flex;
     flex-direction: column;
     border-radius: ${theme.borderRadius.extraRound};
