@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { theme } from "../../../theme";
+import { theme } from "../../../../theme";
 import { useState } from "react";
 
 export default function Main() {
@@ -10,7 +10,7 @@ export default function Main() {
     //affichage(render)
   return (
     <MainStyled>
-      <div className="basket">Basket</div>
+      {/* <div className="basket">Basket</div> */}
       <div className="menu">Menu</div>
     </MainStyled>
   )
