@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export default function Menu() {
     //state
-
+    // const [first, setfirst] = useState(second)
     //comportements
 
     //affichage(render)
