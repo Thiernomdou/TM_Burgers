@@ -28,6 +28,8 @@ const MainStyled = styled.div`
 
     display: grid;
     grid-template-columns: 1fr;
+
+    overflow-y: scroll;
     /* .basket {
       background: pink;
     } */
