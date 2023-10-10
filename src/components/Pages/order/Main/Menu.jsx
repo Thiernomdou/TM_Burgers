@@ -14,11 +14,12 @@ export default function Menu() {
     <MenuStyled>
         {menu.map((produit) => {
           return (
-          <Product imageSource={produit.imageSource} title={produit.title} price={produit.imageSource}/>
+          // <Product imageSource={produit.imageSource} title={produit.title} price={produit.imageSource}/>
+          <Product {...produit}/>
           )
         })}
     </MenuStyled>
-  )
+  ) 
 }
 
 //stylecomponents
