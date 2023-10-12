@@ -6,7 +6,7 @@ import Product from "./Product";
 
 export default function Menu() {
     //state
-    const [menu, setMenu] = useState(fakeMenu1)
+    const [menu, setMenu] = useState(fakeMenu2)
     //comportementsmenu
 
     //affichage(render)
