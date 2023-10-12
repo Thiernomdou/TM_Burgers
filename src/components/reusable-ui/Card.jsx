@@ -1,42 +1,43 @@
 import React from 'react'
 import styled from 'styled-components';
-import {theme} from '../../../../theme'
-import PrimaryButton from '../../../reusable-ui/PrimaryButton'
-import {formatPrice} from '../../../../utils/maths'
+import {theme} from '../../theme'
+import PrimaryButton from './PrimaryButton'
 
-export default function Product({imageSource, title, price }) {
+export default function Card({imageSource, title, leftDescription }) {
   //state
 
   //comportements
 
   //afficher(render)
   return (
-    <ProductStyled className="produit">
+    <CardStyled className="produit">
         <div className="image">
             <img src={imageSource} alt={title} />
         </div>
         <div className="text-info">
           <div className="title">{title}</div>
           <div className="description">
-            <div className="left-description">{formatPrice(price)}</div>
+            <div className="left-description">{leftDescription}</div>
             <div className="right-description">
               <PrimaryButton className="primary-button" label={"Ajouter"}>Ajouter</PrimaryButton>
             </div>
           </div>
         </div>
-    </ProductStyled>
+    </CardStyled>
   )
 }
 
 //styledcomponents
-const ProductStyled = styled.div`
+const CardStyled = styled.div`
   background: ${theme.colors.white};
-    width: 200px;
-    height: 300px;
-    display: grid;
-    grid-template-rows: 65% 1fr;
-    padding: 20px;
-    padding-bottom: 10px;
+  width: 200px;
+  height: 300px;
+  display: grid;
+  grid-template-rows: 65% 1fr;
+  padding: 20px;
+  padding-bottom: 10px;
+  box-shadow: -8px 8px 20px 0px rgb(0 0 0 / 20%);
+  border-radius: ${theme.borderRadius.extraRound};
 
   .image {
     width: 100%;
@@ -92,7 +93,9 @@ const ProductStyled = styled.div`
       }
 
       .primary-button {
-
+        font-size: ${theme.fonts.size.XS};
+        cursor: pointer;
+        padding: 12px;
       }
     }
 
