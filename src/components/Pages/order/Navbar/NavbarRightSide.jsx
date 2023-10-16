@@ -5,6 +5,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css"
 import { theme } from "../../../../theme";
 import { useState } from "react";
+import ToastAdmin from "./ToastAdmin";
 
 export default function NavbarRightSide({username}) {
     //state
@@ -36,7 +37,7 @@ export default function NavbarRightSide({username}) {
             onToggle={displayToastNotification}
         />
         <Profile username={username}/>
-        <ToastContainer className="toaster" bodyClassName="body-toast" />
+        <ToastAdmin />
       </NavbarRightSideStyled>
   )
 }
